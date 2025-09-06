@@ -27,3 +27,9 @@ jobs:
 
       - name: Build with Gradle
         run: gradle build
+        
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MCHunt-jar
+          path: build/libs/*.jar
