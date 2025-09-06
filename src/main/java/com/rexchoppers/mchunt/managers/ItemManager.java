@@ -237,7 +237,7 @@ public class ItemManager {
 
             if (material.isBlock() && material.isItem() && !material.isAir() && material.isSolid()) {
             blockMaterials.add(material);
-            
+
             }
         }
         return blockMaterials;
